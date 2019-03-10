@@ -8,12 +8,13 @@ public class RecursiveCircle extends JPanel
     private static final double STARTING_WIDTH = 1920.0;
     private static final double CENTRE = STARTING_WIDTH / 4.0;
     private static final int ITERATIONS = 5;
+    private static final int CIRCLE_DIAMETER_RATIO = 3;
 
     private static double w = STARTING_WIDTH;
 
     private int numberOfCirclesAtLevel = 0;
     private double lineStart = 0.0;
-    private double radius = w / 6.0;
+    private double radius = w / (CIRCLE_DIAMETER_RATIO * 2);
 
     public static void main(String[] args)
     {
@@ -44,7 +45,7 @@ public class RecursiveCircle extends JPanel
         numberOfCirclesAtLevel = 0;
         lineStart = 0.0;
         w = STARTING_WIDTH;
-        radius = w / 6.0;
+        radius = w / (CIRCLE_DIAMETER_RATIO * 2);
     }
 
     public void drawCircle(int recursiveLevel, Graphics2D graphics)
@@ -52,11 +53,11 @@ public class RecursiveCircle extends JPanel
         int iteration = ITERATIONS - recursiveLevel;
 
         graphics.setColor(new Color(10, 255 - (40 * iteration), 10));
-        Ellipse2D.Double circle = new Ellipse2D.Double(lineStart + w/2 - radius, CENTRE - radius, w/3, w/3);
+        Ellipse2D.Double circle = new Ellipse2D.Double(lineStart + w/2 - radius, CENTRE - radius, w / CIRCLE_DIAMETER_RATIO, w / CIRCLE_DIAMETER_RATIO);
         graphics.fill(circle);
         numberOfCirclesAtLevel++;
 
-        if (numberOfCirclesAtLevel < Math.pow(3, iteration))
+        if (numberOfCirclesAtLevel < Math.pow(CIRCLE_DIAMETER_RATIO, iteration))
         {
             lineStart = lineStart + w;
             drawCircle(recursiveLevel, graphics);
@@ -64,8 +65,8 @@ public class RecursiveCircle extends JPanel
         else if (recursiveLevel > 1)
         {
             lineStart = 0;
-            w = w / 3;
-            radius = w / 6;
+            w = w / CIRCLE_DIAMETER_RATIO;
+            radius = w / (CIRCLE_DIAMETER_RATIO * 2);
             numberOfCirclesAtLevel = 0;
             drawCircle(recursiveLevel - 1, graphics);
         }
