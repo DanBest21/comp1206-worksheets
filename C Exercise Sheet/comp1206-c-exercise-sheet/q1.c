@@ -7,9 +7,9 @@ int analyse(double *prod, double *sum, double d1, double d2)
 {
 	int i1, i2;
 
-	// Round the two passed double values to the nearest integer.
-	i1 = round(d1);
-	i2 = round(d2);
+	// Round the two passed double values to the last integer.
+	i1 = floor(d1);
+	i2 = floor(d2);
 
 	// Calculate the product and sum, and set them to the values of the appropriate pointer passed.
 	*prod = i1 * i2;
