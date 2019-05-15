@@ -1,3 +1,3 @@
-﻿  LINK : H:\Year 1\Programming 2\comp1206-worksheets\C Exercise Sheet\comp1206-c-exercise-sheet\Debug\comp1206-c-exercise-sheet.exe not found or not built by the last incremental link; performing full link
-  comp1206-c-exercise-sheet.vcxproj -> H:\Year 1\Programming 2\comp1206-worksheets\C Exercise Sheet\comp1206-c-exercise-sheet\Debug\comp1206-c-exercise-sheet.exe
-  comp1206-c-exercise-sheet.vcxproj -> H:\Year 1\Programming 2\comp1206-worksheets\C Exercise Sheet\comp1206-c-exercise-sheet\Debug\comp1206-c-exercise-sheet.pdb (Partial PDB)
+﻿  q2.c
+c:\users\dan\university-git\comp1206 - programming 2\comp1206-worksheets\c exercise sheet\comp1206-c-exercise-sheet\q2.c(11): warning C4013: 'malloc' undefined; assuming extern returning int
+  comp1206-c-exercise-sheet.vcxproj -> C:\Users\Dan\university-git\COMP1206 - Programming 2\comp1206-worksheets\C Exercise Sheet\comp1206-c-exercise-sheet\Debug\comp1206-c-exercise-sheet.exe
