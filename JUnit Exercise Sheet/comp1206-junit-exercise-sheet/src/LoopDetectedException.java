@@ -23,21 +23,19 @@
  *   University of Southampton - initial API and implementation
  *******************************************************************************/
 
-package Exception;
-
 /**
  * <p>
- * A checked exception indicating an invalid graph.
+ * A checked exception indicating that the graph contains a loop.
  * </p>
  *
  * @author htson
  */
-public class InvalidGraphException extends Exception {
+public class LoopDetectedException extends Exception {
 
     /**
      * The default constructor.
      */
-    public InvalidGraphException() {
+    public LoopDetectedException() {
         super();
     }
 }

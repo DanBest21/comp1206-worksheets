@@ -19,11 +19,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * Contributors: 
+ * Contributors:
  *   University of Southampton - initial API and implementation
  *******************************************************************************/
 import java.util.Arrays;
-import Exception.*;
 
 /**
  * An implementation of Dijsktra's Shortest Path Tree (SPT) algorithm.

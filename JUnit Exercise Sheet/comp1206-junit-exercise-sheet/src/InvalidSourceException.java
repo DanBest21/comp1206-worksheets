@@ -23,29 +23,19 @@
  *   University of Southampton - initial API and implementation
  *******************************************************************************/
 
-package Exception;
-
 /**
  * <p>
- * A checked exception stating that there is no path between two nodes in a
- * graph.
+ * A checked exception indicating an invalid source node.
  * </p>
  *
  * @author htson
  */
-public class NoPathException extends Exception {
+public class InvalidSourceException extends Exception {
 
     /**
-     * The default constructor.
+     * The default contructor.
      */
-    public NoPathException() {
+    public InvalidSourceException() {
         super();
-    }
-
-    /**
-     * Contruct an exception with a particular error message.
-     */
-    public NoPathException(String msg) {
-        super(msg);
     }
 }
